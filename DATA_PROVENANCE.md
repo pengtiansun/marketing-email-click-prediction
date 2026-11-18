@@ -2,9 +2,9 @@
 
 The data accompany the UW-Madison COMP SCI 320 MP8 exercise, "Selling Laptops - Smart Marketing," a simulated online-retail prediction task.
 
-The accompanying assignment README, under "Dataset," states: "We have generated 3 datasets" and identifies training, public test1, and hidden test2. The analysis requires the six supplied training and public test1 CSV files as local inputs. Raw CSV files are not bundled in this public code repository. Hidden test2 data are not available.
+The accompanying assignment README, under "Dataset," states: "We have generated 3 datasets" and identifies training, public test1, and hidden test2. The six supplied training and public test1 CSV files are included in this repository. Hidden test2 data are not available.
 
-The local files were checked against that accompanying documentation:
+The included files were checked against that accompanying documentation:
 
 | File type | Fields |
 | --- | --- |
@@ -16,4 +16,4 @@ Every URL value in the supplied training and public test1 logs is one of five re
 
 The assignment design and data source are credited to the course. This repository does not assert an additional license over those materials. Results should be interpreted within the course exercise's limitations.
 
-To reproduce the evaluation, obtain an authorized copy of train_users.csv, train_logs.csv, train_y.csv, test1_users.csv, test1_logs.csv, and test1_y.csv. Place them beside evaluate.py or supply their directory with the --data-dir argument. The committed evaluation.json contains aggregate evaluation results from the provided course files.
+To reproduce the evaluation, use the included train_users.csv, train_logs.csv, train_y.csv, test1_users.csv, test1_logs.csv, and test1_y.csv beside evaluate.py. The --data-dir argument can select another directory containing the same files. The committed evaluation.json contains aggregate evaluation results from these course files.
