@@ -7,7 +7,7 @@ Course: University of Wisconsin-Madison, COMP SCI 320, Machine Project 8: Sellin
 
 ## Data and prediction target
 
-The analysis uses six CSV files generated for the course exercise. The binary target is email clicking: 1 means clicked and 0 means did not click. It does not record a purchase. The raw CSV files are local inputs and are not bundled in this public code repository; see DATA_PROVENANCE.md for their source and required fields.
+The analysis uses six CSV files generated for the course exercise. The binary target is email clicking: 1 means clicked and 0 means did not click. It does not record a purchase. All six CSV files are included in the repository root; see DATA_PROVENANCE.md for their source and fields.
 
 | Split | Users | Browsing log rows |
 | --- | ---: | ---: |
@@ -42,7 +42,7 @@ Adding browsing features increased accuracy by 15.40 percentage points over the 
 
 ## Run locally
 
-The evaluation was run with Python 3.12. Obtain the six CSV files from an authorized copy of the course materials and place them in this directory: train_users.csv, train_logs.csv, train_y.csv, test1_users.csv, test1_logs.csv, and test1_y.csv. Then run:
+The evaluation was run with Python 3.12. Download or clone this repository, which includes train_users.csv, train_logs.csv, train_y.csv, test1_users.csv, test1_logs.csv, and test1_y.csv. From the repository directory, run:
 
 ~~~sh
 python -m venv .venv
@@ -65,9 +65,9 @@ python evaluate.py --data-dir /path/to/csv-files --output evaluation.json
 | evaluate.py | Portfolio evaluation script with baselines and a feature ablation |
 | evaluation.json | Reproducible evaluation output, including software versions |
 | requirements.txt | Versions of the main Python dependencies |
-| DATA_PROVENANCE.md | Dataset source, schemas, and required local input files |
-| train_*.csv | Required local training users, logs, and labels; not bundled |
-| test1_*.csv | Required local public test users, logs, and labels; not bundled |
+| DATA_PROVENANCE.md | Dataset source, schemas, and included data files |
+| train_*.csv | Included course-generated training users, logs, and labels |
+| test1_*.csv | Included course-generated public test users, logs, and labels |
 
 ## Interpretation and limitations
 
